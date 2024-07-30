@@ -3,4 +3,16 @@ document.body.style.backgroundColor = "rgb(0, 15, 133)";
 document.querySelector(".introduction h1").style.textDecoration = "underline";
 document.querySelector(".introduction h2").innerText = "Here are Pokemon's incredible Gen 1 starters!";
 
-document.querySelector("#starters_image_div img").style.border = "5px dotted orange"
+document.querySelector("#starters_image_div img").style.border = "5px dotted orange";
+
+
+
+let pkm_imgs = document.querySelectorAll(".pokemon_images");
+for (i = 0; i < pkm_imgs.length; i++) {
+    pkm_imgs[i].style.border = "5px dotted orange";
+}
+
+let pkm_names = document.querySelectorAll(".pokemon_names");
+for (i = 0; i < pkm_names.length; i++) {
+    pkm_names[i].innerText += "!";
+}
